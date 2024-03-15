@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" href="images/Logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="index.html#home" class="logo">
+            <img src="images/Logo.jpg" alt="">
+        </a>
+
+        <span class="company__title">Dobal Real Estate Corporation</span>
+        <div class="bx bx-menu" id="menu-icon">
+        </div>
+        
+        <nav>
+            <ul class="nav">
+                <div class="exit" id="exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+                <li class="dropdown" id="dropdown-tech">
+                    <div class="nav-about-dd">
+                        <a href="##" id="dropdown" class="nav-about-dd">Technology
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="nav-dd">
+                            <a href="gnss.html">Global Navigation Sattelite System</a>
+                            <a href="software.html">Surveying Software</a>
+                        </div>
+                    </div>
+
+                    <div class="tech-dd" id="tech-dd" onclick="techDD()">
+                        <div class="tech-child">
+                            <a href="gnss.html">Global Navigation Sattelite System</a>
+                            <a href="software.html">Surveying Software</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="gnss.html">Global Navigation Sattelite System</a>
+                        <a href="software.html">Surveying Software</a>
+                    </div>
+                    
+                </li>
+                
+                
+                
+                <li class="dropdown">
+                    
+                        <a href="#service" id="dropdown">Services</a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="relocation.html" onclick="relocation();">Relocation Survey</a>
+                            <a href="topographic.html" onclick="topographic();">Topographic Survey</a>
+                            <a href="verification.html" onclick="verification();">Verification Survey</a>
+                            <a href="subdivision.html" onclick="subdivision();">Subdivision Survey</a>
+                            <a href="parcellary.html" onclick="parcellary();">Parcellary Survey</a>
+                            <a href="land_development.html" onclick="landDevelopment();">Land Development Survey</a>
+                            <a href="construction.html" onclick="construction();">Construction Layout</a>
+                            <a href="land_tilting.html" onclick="landTilting();">Land Titling Services</a>
+                            <a href="site_development.html" onclick="siteDevelopment();">Site Development Survey</a>
+                            
+                        </div>
+                
+                </li>
+
+                <li class="dropdown" id="dropdown-about">
+                    
+                    <div class="nav-about-dd">
+                        <a href="#" id="dropdown" class="nav-about-dd">About Us <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="nav-dd">
+                            <a href="proprietor.html">The Proprietor</a>
+                            <a href="companyProfile.html" class="nav-dd-items">Company Profile</a>
+                            <a href="organizationalChart.html" class="nav-dd-items">Organizational Chart</a>
+                        </div>
+                        
+                    </div>
+                        
+                        <div class="about-dd" id="about-dd" onclick="aboutDD()">
+                            <div class="about-child">
+                                <a href="proprietor.html">The Proprietor</a>
+                                <a href="companyProfile.html">Company Profile</a>
+                                <a href="organizationalChart.html">Organizational Chart</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="proprietor.html">The Proprietor</a>
+                            <a href="companyProfile.html">Company Profile</a>
+                            <a href="organizationalChart.html">Organizational Chart</a>
+                        </div>
+                        
+                </li>
+
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="main-service-container">
+        <section class="d-flex all_services">
+            <div class="all_services_header">
+                <div class="all_services_header_text">
+                    <h2>Fully experienced in all aspects of survey work.</h2>
+                    <div class="img_header_container">
+                        <img src="images/services.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>At Dobal Real Estate Corporation, we cater to clients from all walks of life, from first-time developers and builders to large-scale development experts. Before you start your renovation, new build or construction project, Dobal Real Estate Corporation will be there to get you on the fast track and started right.</p>
+                        <p>Below, you will see all the different types of specialized land surveys Dobal Real Estate Corporation Land Surveyors can help with. So whether it is helping sort out where to build a new fence or to start designing and planning a multi-unit development, our team is here to assist, whether you're a homeowner or property developer.</p>
+                    </div>
+
+                    <div class="get_a_quote">
+                        <a href="index.html#bottom_contact">Request a Free Quote Today</a>
+                    </div>
+                </div>
+            </div>
+            <div class="all_services_header_img">
+                <img src="images/services.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="all_services_card_container d-flex">
+            <div class="services_card_container">
+                <div class="services_card">
+                    <a href="topographic.html">
+                        <img src="images/topographicImage/mapping1.png" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="topographic.html">Topographic Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="subdivision.html">
+                        <img src="images/subdivision_survey.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="subdivision.html">Subdivision Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="relocation.html">
+                        <img src="images/relocation.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="relocation.html">Relocation Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="construction.html">
+                        <img src="images/construction.jpeg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="construction.html">Construction Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="parcellary.html">
+                        <img src="images/parcellary/parcellary1.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="parcellary.html">Parcellary Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="verification.html">
+                        <img src="images/verificationSurvey.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="verification.html">Verification Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="site_development.html">
+                        <img src="images/siteDevelopment/siteDevelopment.png" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="site_development.html">Site Development Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="land_development.html">
+                        <img src="images/landDevelopment/landDevelopment.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="land_development.html">Land Development Survey</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <a href="land_tilting.html">
+                        <img src="images/landTitling/landTitling.jpg" alt="">
+                    </a>
+                    <div class="card_description">
+                        <a href="land_tilting.html">Land Titling Service</a>
+                    </div>
+                </div>
+                
+           
+
+    
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content-container">
+                <div class="follow-us">
+                    <h1>Follow Us</h1>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100094381633986" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer-email">
+                    <strong>E-mail Address</strong><br>
+                    <small>dobalrealestatemanagement@gmail.com</small>
+                </div>
+                <br>
+                <div class="footer-telephone">
+                    <strong>Telephone Number:</strong><br>
+                    <small>(045) 606 5122</small>
+                </div>
+                <br>
+    
+                <div class="footer-address">
+                    <strong>Head Office:</strong> <br>
+                    <small>MCR Building, Door 5, Talaga, Capas, Tarlac, Tarlac, Philippines</small>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="footer-bottom">
+                <p>&copy; 2024 - Dobal Real Estate Corporation</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        emailjs.init({
+            publicKey: '9WIkJgXLaXPlPaZ8v',
+        });
+    </script>
+</body>
+</html>
