@@ -596,6 +596,7 @@ footer {
 
 .online-estimate{
     margin-bottom: 100px;
+    text-align: center;
 }
 
 
@@ -733,7 +734,6 @@ hr {
 }
 
 .relocation h1 {
-    color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
 }
@@ -773,7 +773,6 @@ hr {
 }
 
 .topographic h1 {
-    color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
 }
@@ -804,7 +803,6 @@ hr {
 }
 
 .verification h1 {
-    color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
 }
@@ -850,7 +848,6 @@ hr {
 }
 
 .subdivision h1 {
-    color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
 }
@@ -1792,6 +1789,7 @@ hr {
     }
     .online-estimate {
         margin: 0px 0px 20px 0px;
+        text-align: center;
     }
 
     .email-us-icon i {
@@ -1897,6 +1895,7 @@ hr {
 
     .form-contact {
         padding: 10px;
+        text-align: center;
     }
     .map-container {
         margin-top: 20px;
