@@ -690,6 +690,11 @@ hr {
     height: 500px;
 }
 
+.home-vid video {
+    width: 650px;
+    height: 550px;
+}
+
 
 /* CAROUSEL STYLE */
 .carousel-container {
