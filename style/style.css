@@ -1945,7 +1945,7 @@ hr {
     
 
     .footer-bottom {
-        background-color: #030637;
+        background-color: var(--main-color);
         height: 50px;
         width: 100%;
         display: flex;
