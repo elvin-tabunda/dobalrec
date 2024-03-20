@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --main-color: #62e793;
-    --text-color: #fff;
-    --bg-color: #212835;
+    --main-color: rgb(0, 107, 0);
+    --text-color: #212121;
+    --bg-color: #e8e8e8;
     --big-font: 4rem;
     --h2-font: 2.25rem;
     --p-font: 0.9rem;
 
-    --hue: 250;
+    --hue: 950;
     --sat: 66%;
     --lig: 61%;
 }
@@ -34,6 +34,54 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+/* 
+body.dark-theme {
+    --title-color: hsl(var(--hue), 12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --bg-color: hsl(var(--hue), 40%, 8%);
+}
+
+  
+.change-theme {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change-theme:hover {
+    color: green;
+}
+
+.theme_mode_container {
+    display: none;
+}
+.theme i{
+    margin-top: 100px;
+    margin-right: 100px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header {
     position: fixed;
@@ -60,6 +108,7 @@ header {
     color: var(--main-color);
     font-size: 3rem;
     font-weight: 600;
+    letter-spacing: -3px;
 }
 /* DROPDOWN */
 /* Add your existing styles here */
@@ -161,11 +210,12 @@ ul a:hover {
 
 
 footer {
-    background-color: #1b212c;
+    background-color: #fff;
     width: 100%;
     height: auto;
     position: relative;
     bottom: 0;
+
 }
 .footer {
     padding: 100px 10%;
@@ -590,7 +640,7 @@ footer {
 
   .sendBtn {
     padding: 10px 20px; /* Adjust button padding as needed */
-    color: #000;
+    color: #fff;
   }
 
 
@@ -617,7 +667,7 @@ footer {
     width: 120px;
     height: 50px;
     border: solid 3px var(--main-color);
-    color: var(--text-color);
+    color: #fff;
     border-radius: 5px;
     font-weight: 600;
 }
@@ -676,6 +726,12 @@ hr {
     font-size: 50px;
     background: #0070f3;
     border-radius: 50%;
+    color: #fff;
+}
+
+.home-vid video {
+    width: 650px;
+    height: 550px;
 }
 
 
@@ -688,11 +744,6 @@ hr {
 
 .main-carousel-container .carousel-item img {
     height: 500px;
-}
-
-.home-vid video {
-    width: 650px;
-    height: 550px;
 }
 
 
@@ -715,9 +766,9 @@ hr {
     margin-top: 50px;
 }
 .view_more_services_main a {
-    border: #62e793 3px solid;
+    border: var(--main-color) 3px solid;
     padding: 15px 20px;
-    color: #62e793;
+    color: var(--main-color);
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 5px;
@@ -880,7 +931,10 @@ hr {
     margin-bottom: 50px;
 }
 
-
+.proprietor_text_bottom {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
 
 /* ==== ORGANIZATIONAL CHAR ===== */
 .org-main-container {
@@ -993,16 +1047,16 @@ hr {
 .parentReed {
     flex: 9;
 }
+
 .reed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
     gap: 10px;
 }
+
 
 .org_profile_container {
     max-width: 280px;
@@ -1018,6 +1072,9 @@ hr {
     width: 100%;
     height: 100%;
     background: rgb(184, 184, 208);
+}
+.org_profile_info p {
+    color: #607274;
 }
 
 .org_profile img {
@@ -1076,11 +1133,15 @@ hr {
         height: 100%;
     }
     .event_title {
-        background-color: #205c44;
+        background-color: var(--main-color);
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .event_title h3 {
+        color: var(--bg-color);
     }
     .event_title_date h5 {
         color: #000;
@@ -1224,7 +1285,7 @@ hr {
 
 .company__text {
     max-width: 600px;
-    color: #000;
+    color: #607274;
     margin-left: 50px;
     font-size: 1.2rem;
     text-align: justify;
@@ -1237,6 +1298,10 @@ hr {
     max-width: 850px;
     text-align: justify;
     margin-bottom: 50px;
+}
+
+.company__people p {
+    color: #607274;
 }
 
 .company__people h2 {
@@ -1264,6 +1329,7 @@ hr {
     margin-bottom: 50px;
     max-width: 900px;
     text-align: justify;
+    color: #607274;
 }
 
 .equipment__image {
@@ -1286,7 +1352,7 @@ hr {
 
 .footer-content-container {
     padding: 25px;
-    
+    color: #000;
 }
 
 .footer-icons a i{
@@ -1303,7 +1369,7 @@ hr {
 }
 
 .footer-bottom {
-    background-color: #030637;
+    background-color: var(--main-color);
     height: 50px;
     width: 100%;
     display: flex;
@@ -1313,6 +1379,7 @@ hr {
 
 .footer-bottom p {
     margin-bottom: 0px;
+    color: #fff;
 }
 
 
@@ -1579,8 +1646,9 @@ hr {
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color: #2b2640;
+        background-color: var(--bg-color);
         transition: 0.4s;
+        border: #000 solid 1px;
     }
     header .nav.active {
         top: 130px;
@@ -1694,6 +1762,7 @@ hr {
         top: 100px;
         height: auto;
         text-align: left;
+        z-index: 120;
     }
 
     .dropdown:hover .dropdown-content {
@@ -1707,6 +1776,22 @@ hr {
     .nav a {
         padding: 0.7rem 0.7rem 0.7rem 1.5rem;
         display: block;
+    }
+
+    .theme_mode_container {
+        width: 100%;
+        background: #fff;
+        height: 100px;
+        display: block;
+        margin-top: -100px;
+        position: relative;
+    }
+
+    .theme_mode_container .theme_mode {
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
+        margin-top: 15px;
     }
 
     .carousel-container {
@@ -1738,6 +1823,7 @@ hr {
     .home-vid video {
         width: 100%;
         height: 450px; /* Make the video fill the container */
+        
         
     }
     
@@ -1913,6 +1999,10 @@ hr {
     }
     .contact-form {
         margin-top: 50px;
+    }
+
+    .reed {
+        margin-left: 10px;
     }
     .reedHeader h4 {
         font-size: 1.2rem;
@@ -2153,6 +2243,10 @@ hr {
     .techtech {
         top: 15%;
     }
+    .company__title {
+        letter-spacing: -2px;
+    }
+    
 }
 
 @media only screen and (max-width: 375px) {
