@@ -3,10 +3,8 @@
 :root {
     --main-color: rgb(0, 107, 0);
     --text-color: #212121;
-    --bg-color: #e8e8e8;
-    --big-font: 4rem;
+    --bg-color: #fff;
     --h2-font: 2.25rem;
-    --p-font: 0.9rem;
 
     --hue: 950;
     --sat: 66%;
@@ -970,6 +968,7 @@ hr {
     width: 100%;
     height: auto;
     background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .top_position:nth-of-type(1) {
@@ -1136,6 +1135,7 @@ hr {
     }
     .events_card {
         background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         max-width: 420px;
         width: 100%;
         height: 400px;
@@ -1216,6 +1216,7 @@ hr {
     }
     .project_location {
         background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         height: 50px;
     }
     .project_location  {
@@ -1609,6 +1610,7 @@ hr {
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .grx3 img{
@@ -1622,6 +1624,7 @@ hr {
     width: 100%;
     line-height: 1.7;
     text-align: justify;
+    margin-bottom: 100px;
 }
 
 .plokers {
@@ -2083,6 +2086,10 @@ hr {
         background-color: var(--main-color);
         width: 100%;
     }
+    .company__header h1 {
+        word-spacing: 3%;
+        font-size: 1.35rem;
+    }
 
     .about_us_content_card_container {
         flex-direction: column;
@@ -2253,6 +2260,7 @@ hr {
     .plokers {
         margin-left: 30px;
         gap: 10px;
+        margin-bottom: 100px;
     }
     .nav-about-dd i{
         display: inline-block;
