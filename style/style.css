@@ -97,9 +97,10 @@ header {
 
 .logo img {
     width: 70px;
-    height: 70px;
+    height: auto;
     z-index: 100;
     position: relative;
+    object-fit: cover;
 }
 
 .company__title {
@@ -213,7 +214,7 @@ footer {
     height: auto;
     position: relative;
     bottom: 0;
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .footer {
     padding: 100px 10%;
@@ -274,7 +275,7 @@ footer {
 
 .home-btn a {
     background: green;
-    padding: 10px;
+    padding: 10px 20px 10px;
     color: #fff;
     border-radius: 3px;
     text-decoration: none;
@@ -397,6 +398,7 @@ footer {
     height: 100%;
     border-radius: 50%;
     border: var(--main-color) 3px solid;
+    object-fit: cover;
 }
 
 
@@ -707,10 +709,11 @@ hr {
 }
 
 .online-estimate .or {
-    color: #0070f3;
+    color: #000;
     font-size: 2rem;
     font-weight: 600;
 }
+
 
 .email-us span {
     color: var(--main-color);
@@ -721,14 +724,14 @@ hr {
 .email-us-icon i {
     margin-top: 30px;
     font-size: 50px;
-    background: #0070f3;
+    background: var(--main-color);
     border-radius: 50%;
     color: #fff;
 }
 
 .home-vid video {
     width: 650px;
-    height: 550px;
+    object-fit: contain;
 }
 
 
@@ -979,7 +982,6 @@ hr {
     width: 100%;
     height: 200px;
     display: flex;
-    background-color: #eaeaea;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .proprietor_profile {
@@ -992,6 +994,8 @@ hr {
 .proprietor_profile img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .proprietor_info {
@@ -1001,13 +1005,13 @@ hr {
 }
 
 .info_container {
-    color: #607274;
+    color: #000;
     font-size: 1.2rem;
     line-height: 1.2;
 }
 .info_container h4 {
     font-weight: 600;
-    color: #6EC1E4;
+    color: var(--main-color);
 }
 
 .big_three_position {
@@ -1079,7 +1083,6 @@ hr {
     width: 100%;
     height:130px;
     display: flex;
-    background-color: #eaeaea;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -1096,6 +1099,8 @@ hr {
 .org_profile img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .org_profile_info {
     text-align: left;
@@ -1148,6 +1153,7 @@ hr {
     .event_image_container img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .event_title {
         background-color: var(--main-color);
@@ -1205,6 +1211,7 @@ hr {
     .projects_image_container img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
     .project_title {
         background-color: var(--main-color);
@@ -1301,6 +1308,7 @@ hr {
 .company__logo img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .company__text {
@@ -1362,6 +1370,7 @@ hr {
 .equipment__image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -1446,6 +1455,7 @@ hr {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
+    object-fit: cover;
 }
 
 
@@ -1489,6 +1499,7 @@ hr {
 .services_card img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .card_description {
@@ -1548,6 +1559,7 @@ hr {
 .affiliate_img_container img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .shadow_pop {
     position: absolute;
@@ -1580,6 +1592,7 @@ hr {
 .tech_header_img img {
     width: 100%;
     height: 700px;
+    object-fit: cover;
 }
 
 .tech_content_container {
@@ -1632,12 +1645,14 @@ hr {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     width: 100%;
     margin-left: 200px;
+    margin-bottom: 50px;
 }
 
 .ploks img {
     max-width: 150px;
     height: 150px;
     width: 100%;
+    object-fit: cover;
 }
 .tech_main {
     margin-top: 100px;
